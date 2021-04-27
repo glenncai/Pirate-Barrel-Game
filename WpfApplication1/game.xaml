@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfApplication1.game"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="Pirate Barrel Game" Height="400" Width="560">
+    <Grid>
+        <Label x:Name="showPlayer" Content="Choose: Player1" FontSize="20" HorizontalAlignment="Left" Margin="191,42,0,0" VerticalAlignment="Top" Height="47" Width="166"/>
+        <ScrollViewer Margin="25,115,33.6,170.4" HorizontalScrollBarVisibility="Auto">
+            <ScrollViewer.Content>
+                <StackPanel HorizontalAlignment="Left" Height="307" VerticalAlignment="Top" Width="199" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                    <Button x:Name="Slot1" Content="Slot1" Margin="0,0,-289.8,0" Click="Slot1_click"/>
+                    <Button x:Name="Slot2" Content="Slot2" Margin="0,0,-289.8,0" Click="Slot2_click"/>
+                    <Button x:Name="Slot3" Content="Slot3" Margin="0,0,-289.8,0" Click="Slot3_click"/>
+                    <Button x:Name="Slot4" Content="Slot4" Margin="0,0,-289.8,0" Click="Slot4_click"/>
+                    <Button x:Name="Slot5" Content="Slot5" Margin="0,0,-289.8,0" Click="Slot5_click"/>
+                    <Button x:Name="Slot6" Content="Slot6" Margin="0,0,-289.8,0" Click="Slot6_click"/>
+                    <Button x:Name="Slot7" Content="Slot7" Margin="0,0,-289.8,0" Click="Slot7_click"/>
+                    <Button x:Name="Slot8" Content="Slot8" Margin="0,0,-289.8,0" Click="Slot8_click"/>
+                    <Button x:Name="Slot9" Content="Slot9" Margin="0,0,-289.8,0" Click="Slot9_click"/>
+                    <Button x:Name="Slot10" Content="Slot10" Margin="0,0,-289.8,0" Click="Slot10_click"/>
+                    <Button x:Name="Slot11" Content="Slot11" Margin="0,0,-289.8,0" Click="Slot11_click"/>
+                    <Button x:Name="Slot12" Content="Slot12" Margin="0,0,-289.8,0" Click="Slot12_click"/>
+                </StackPanel>
+            </ScrollViewer.Content>
+        </ScrollViewer>
+        <Label x:Name="loserShow" Content="" FontSize="20" HorizontalAlignment="Left" Margin="218,250,0,0" VerticalAlignment="Top" Height="56" Width="139"/>
+        <Label x:Name="timeShow" Content="" FontSize="20" HorizontalAlignment="Left" Margin="433,20,0,0" VerticalAlignment="Top" Height="79" Width="87"/>
+        <Canvas x:Name="canvas2D" HorizontalAlignment="Left" Height="117" Margin="210,115,0,0" VerticalAlignment="Top" Width="147"/>
+    </Grid>
+</Window>
